@@ -11,7 +11,7 @@ class Peek < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/bskyn/peek/releases/download/v0.3.0/peek_darwin_amd64.tar.gz"
-      sha256 "8b20bb47e99d2b30e95d0daab30794872529959bb399cc7958df1246dfaf3b8b"
+      sha256 "9176bc5a1014d62249db1d84b1a63ccf59d549ddc2c96859df42d7cb593654b9"
 
       define_method(:install) do
         bin.install "peek"
@@ -19,7 +19,7 @@ class Peek < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/bskyn/peek/releases/download/v0.3.0/peek_darwin_arm64.tar.gz"
-      sha256 "68dc29b7170e9cb1462faf21a0cdb3340b936c0514c6b81310933e4db7c4b0c6"
+      sha256 "cb7cc04683ef63b9e050c4ba98ef128c63b3745cbee73c04eb538cdc05d798e9"
 
       define_method(:install) do
         bin.install "peek"
@@ -30,14 +30,14 @@ class Peek < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/bskyn/peek/releases/download/v0.3.0/peek_linux_amd64.tar.gz"
-      sha256 "4bde583d6f223ce60e419d0c0ad3f2f53d58dac9a14dd875565b932087797eeb"
+      sha256 "71075054c675789d4ce005967f283d904c76fb120ee9ffe41f0d89ee8a587436"
       define_method(:install) do
         bin.install "peek"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/bskyn/peek/releases/download/v0.3.0/peek_linux_arm64.tar.gz"
-      sha256 "3da9b6de9d178b9ea91136ae93f69b805e9845245d32d6f437264634b0437643"
+      sha256 "35f45201a89cd9c38464faeef35cc9742a6165570466b7899f4a20cdd657f9d0"
       define_method(:install) do
         bin.install "peek"
       end
