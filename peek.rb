@@ -5,21 +5,21 @@
 class Peek < Formula
   desc "Observe AI agent sessions in real-time"
   homepage "https://github.com/bskyn/peek"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bskyn/peek/releases/download/v0.2.0/peek_darwin_amd64.tar.gz"
-      sha256 "3770a9c32e489ed61f453be30e4208da20e4deae95de760b30fa6c3e56cd55d4"
+      url "https://github.com/bskyn/peek/releases/download/v0.3.0/peek_darwin_amd64.tar.gz"
+      sha256 "8b20bb47e99d2b30e95d0daab30794872529959bb399cc7958df1246dfaf3b8b"
 
       define_method(:install) do
         bin.install "peek"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bskyn/peek/releases/download/v0.2.0/peek_darwin_arm64.tar.gz"
-      sha256 "378244dcd99ef206426eae12ae13832fbdf38259795b7d6bc5f1e9603e26924f"
+      url "https://github.com/bskyn/peek/releases/download/v0.3.0/peek_darwin_arm64.tar.gz"
+      sha256 "68dc29b7170e9cb1462faf21a0cdb3340b936c0514c6b81310933e4db7c4b0c6"
 
       define_method(:install) do
         bin.install "peek"
@@ -29,15 +29,15 @@ class Peek < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bskyn/peek/releases/download/v0.2.0/peek_linux_amd64.tar.gz"
-      sha256 "69715a3350b453c48d7435527b7461bd9bfc21225e37f208de22af8f1194e1e3"
+      url "https://github.com/bskyn/peek/releases/download/v0.3.0/peek_linux_amd64.tar.gz"
+      sha256 "4bde583d6f223ce60e419d0c0ad3f2f53d58dac9a14dd875565b932087797eeb"
       define_method(:install) do
         bin.install "peek"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bskyn/peek/releases/download/v0.2.0/peek_linux_arm64.tar.gz"
-      sha256 "ee70104e3830c9bb36bae15739d257c392ce327e4a593fb35d1cc0f8d914ef30"
+      url "https://github.com/bskyn/peek/releases/download/v0.3.0/peek_linux_arm64.tar.gz"
+      sha256 "3da9b6de9d178b9ea91136ae93f69b805e9845245d32d6f437264634b0437643"
       define_method(:install) do
         bin.install "peek"
       end
